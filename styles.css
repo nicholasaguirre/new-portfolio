@@ -17,9 +17,52 @@ li {
     list-style: none;
 }
 
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.click {
+    transition: all 300ms ease;
+}
+
+.click:hover {
+    transform: scale(1.1);
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+
+
 section {
     background-color: rgb(245, 245, 245)
 }
+
+.title {
+    font-size: 120px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+.purple {
+    color: #8400bc;
+}
+
+/* 
+
+Landing page
+
+*/
 
 #landing-page {
     min-height: 100vh;
@@ -32,7 +75,82 @@ section {
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
+    padding: 0 30px;
 }
+
+.header__para {
+    font-size: 24px;
+    line-height: 2;
+    max-width: 525px;
+}
+
+.social__list {
+    margin: 16px 0;
+    display: flex;
+}
+
+.social__link {
+    background-color: #8400bc;
+    color: white;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #8400bc;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    border: 2px solid #8400bc;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll__icon:after {
+    content: "";
+    background-color: #8400bc;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
 /* 
 
 NAVIGATION 
@@ -47,6 +165,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     height: 100px;
+    padding: 0 20px;
 }
 
 #personal-logo {
@@ -63,7 +182,6 @@ nav {
     margin: 0 12px;
 }
 .nav__link--anchor {
-    text-decoration: none;
     font-size: 16px;
     color: #242424;
     font-weight: 700;
