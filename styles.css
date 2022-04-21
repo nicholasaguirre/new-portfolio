@@ -398,6 +398,7 @@ MODAL
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading {
@@ -412,6 +413,7 @@ MODAL
     font-weight: 700;
     text-align: center;
     padding: 28px;
+
 }
 
 .fa-spinner {
